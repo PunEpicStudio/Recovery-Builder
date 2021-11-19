@@ -56,17 +56,7 @@ task:
       - echo "Syncing Complete!"
       - echo "============================"
   
-  fox-10-setup_script:
-      - cd ~/work
-      - cd build
-      - wget https://gitlab.com/OrangeFox/sync/-/raw/master/patches/patch-manifest-fox_10.0.diff
-      - patch -p1 < patch-manifest-fox_10.0.diff
-      - rm -rf patch-manifest-fox_10.0.diff
-      - cd -
-      - rm -rf bootable/recovery vendor/recovery
-      - git clone https://gitlab.com/OrangeFox/bootable/Recovery.git -b fox_10.0 bootable/recovery
-      - git clone https://gitlab.com/OrangeFox/vendor/recovery.git -b fox_10.0 vendor/recovery
-  
+
   Clone-OrangeFox-Theme_script:
       - git clone https://gitlab.com/OrangeFox/misc/Theme.git ~/work/bootable/recovery/gui/theme
   
