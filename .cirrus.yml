@@ -75,7 +75,7 @@ task:
       - ccache -M 50G
       - rm -rf frameworks/base/services/core/xsd/vts/Android.mk && touch frameworks/base/services/core/xsd/vts/Android.mk
       - . build/envsetup.sh
-      - lunch twrp_$DEVICE-eng
+      - lunch omni_$DEVICE-eng
       - mka -j16 $TARGET
      
   Upload_script:
