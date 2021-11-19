@@ -73,6 +73,7 @@ task:
       - export USE_CCACHE=1
       - export CCACHE_EXEC=/usr/bin/ccache
       - ccache -M 50G
+      _ rm -rf frameworks/base/services/core/xsd/vts/Android.mk && touch frameworks/base/services/core/xsd/vts/Android.mk
       - . build/envsetup.sh
       - lunch twrp_$DEVICE-eng
       - mka -j16 $TARGET
