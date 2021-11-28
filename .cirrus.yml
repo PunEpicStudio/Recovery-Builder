@@ -62,9 +62,9 @@ task:
       - git clone https://github.com/TeamWin/android_device_qcom_common.git -b android-11 device/qcom/common
   
   Build_script:
-      - echo "============================"
+      - echo "============================="
       - echo "Starting the Build..."
-      - echo "============================"
+      - echo "============================="
       - cd ~/work
       - export ALLOW_MISSING_DEPENDENCIES=true
       - export LC_ALL="C"
