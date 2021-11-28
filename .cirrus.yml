@@ -74,7 +74,7 @@ task:
       - export CCACHE_EXEC=/usr/bin/ccache
       - ccache -M 50G
       - . build/envsetup.sh
-      - lunch omni_$DEVICE-engq
+      - lunch omni_$DEVICE-eng
       - mka -j16 $TARGET
      
   Upload_script:
